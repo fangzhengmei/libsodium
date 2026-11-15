@@ -1,0 +1,22 @@
+client_rx: [cb887af215a891dc2ae7c20fc28932473edd1608f91e9412d1e6813a937c5b71]
+client_tx: [5b2c4e4c9458db143ced182e9362a8ddc39b144e72d94b0f84cb8868e90f494e]
+pair 0/0: ok
+pair 0/1: ok
+pair 0/2: ok
+pair 1/0: ok
+pair 1/1: ok
+pair 1/2: ok
+pair 2/0: ok
+pair 2/1: ok
+pair 2/2: ok
+both-as-client: no common channel
+both-as-server: no common channel
+wrong peer: no common channel
+bad_pk 0: rejected
+bad_pk 1: rejected
+bad_pk 2: rejected
+bad_pk 3: rejected
+bad_pk 4: rejected
+bad_pk 5: rejected
+bad_pk 6: rejected
+tv_kx2: ok

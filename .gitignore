@@ -141,6 +141,7 @@ test/default/kem
 test/default/kem_mlkem768
 test/default/kem_xwing
 test/default/kx
+test/default/kx2
 test/default/metamorphic
 test/default/misuse
 test/default/onetimeauth

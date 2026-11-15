@@ -59,6 +59,7 @@ EXTRA_DIST = \
 	kem_xwing.exp \
 	keygen.exp \
 	kx.exp \
+	kx2.exp \
 	metamorphic.exp \
 	misuse.exp \
 	onetimeauth.exp \
@@ -167,6 +168,7 @@ DISTCLEANFILES = \
 	kem_xwing.res \
 	keygen.res \
 	kx.res \
+	kx2.res \
 	metamorphic.res \
 	misuse.res \
 	onetimeauth.res \
@@ -276,6 +278,7 @@ TESTS_TARGETS = \
 	kem_xwing \
 	keygen \
 	kx \
+	kx2 \
 	metamorphic \
 	misuse \
 	onetimeauth \
@@ -494,6 +497,9 @@ keygen_LDADD              = $(TESTS_LDADD)
 
 kx_SOURCE                 = cmptest.h kx.c
 kx_LDADD                  = $(TESTS_LDADD)
+
+kx2_SOURCE                = cmptest.h kx2.c
+kx2_LDADD                 = $(TESTS_LDADD)
 
 metamorphic_SOURCE        = cmptest.h metamorphic.c
 metamorphic_LDADD         = $(TESTS_LDADD)
