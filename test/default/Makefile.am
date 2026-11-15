@@ -24,6 +24,7 @@ EXTRA_DIST = \
 	box_easy.exp \
 	box_easy2.exp \
 	box_seal.exp \
+	box_seal2.exp \
 	box_seed.exp \
 	chacha20.exp \
 	codecs.exp \
@@ -131,6 +132,7 @@ DISTCLEANFILES = \
 	box_easy.res \
 	box_easy2.res \
 	box_seal.res \
+	box_seal2.res \
 	box_seed.res \
 	chacha20.res \
 	codecs.res \
@@ -249,6 +251,7 @@ TESTS_TARGETS = \
 	box_easy \
 	box_easy2 \
 	box_seal \
+	box_seal2 \
 	box_seed \
 	chacha20 \
 	codecs \
@@ -389,6 +392,9 @@ box_easy2_LDADD           = $(TESTS_LDADD)
 
 box_seal_SOURCE           = cmptest.h box_seal.c
 box_seal_LDADD            = $(TESTS_LDADD)
+
+box_seal2_SOURCE          = cmptest.h box_seal2.c
+box_seal2_LDADD           = $(TESTS_LDADD)
 
 box_seed_SOURCE           = cmptest.h box_seed.c
 box_seed_LDADD            = $(TESTS_LDADD)
