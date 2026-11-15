@@ -10,6 +10,7 @@ EXTRA_DIST = \
 	aead_aes256gcm2.exp \
 	aead_chacha20poly1305.exp \
 	aead_chacha20poly13052.exp \
+	aead_edge.exp \
 	aead_xchacha20poly1305.exp \
 	auth.exp \
 	auth2.exp \
@@ -117,6 +118,7 @@ DISTCLEANFILES = \
 	aead_aes256gcm2.res \
 	aead_chacha20poly1305.res \
 	aead_chacha20poly13052.res \
+	aead_edge.res \
 	aead_xchacha20poly1305.res \
 	auth.res \
 	auth2.res \
@@ -235,6 +237,7 @@ TESTS_TARGETS = \
 	aead_aes256gcm2 \
 	aead_chacha20poly1305 \
 	aead_chacha20poly13052 \
+	aead_edge \
 	aead_xchacha20poly1305 \
 	auth \
 	auth2 \
@@ -347,6 +350,9 @@ aead_chacha20poly1305_LDADD           = $(TESTS_LDADD)
 
 aead_chacha20poly13052_SOURCE         = cmptest.h aead_chacha20poly13052.c
 aead_chacha20poly13052_LDADD          = $(TESTS_LDADD)
+
+aead_edge_SOURCE                      = cmptest.h aead_edge.c
+aead_edge_LDADD                       = $(TESTS_LDADD)
 
 aead_xchacha20poly1305_SOURCE         = cmptest.h aead_xchacha20poly1305.c
 aead_xchacha20poly1305_LDADD          = $(TESTS_LDADD)
