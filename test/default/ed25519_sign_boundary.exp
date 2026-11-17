@@ -1,0 +1,16 @@
+control: valid signature accepted, message recovered intact
+non-canonical scalar S=L: rejected, no authenticated output (length reported: 0)
+non-canonical scalar S=L+1: rejected, no authenticated output (length reported: 0)
+non-canonical scalar S>>L: rejected, no authenticated output (length reported: 0)
+non-canonical point R: rejected, no authenticated output (length reported: 0)
+small-order point R: rejected, no authenticated output (length reported: 0)
+non-canonical public key: rejected, no authenticated output (length reported: 0)
+small-order public key: rejected, no authenticated output (length reported: 0)
+truncated signature (63 bytes): rejected, no authenticated output (length reported: 0)
+truncated signature (32 bytes, R only): rejected, no authenticated output (length reported: 0)
+empty message: accepted on both interfaces, zero-length payload
+signature R region mutations: 256 rejected, 0 accepted, 0 acceptance-set divergences
+signature S region mutations: 256 rejected, 0 accepted, 0 acceptance-set divergences
+public key mutations: 256 rejected, 0 accepted, 0 acceptance-set divergences
+message mutations: 312 rejected, 0 accepted
+OK

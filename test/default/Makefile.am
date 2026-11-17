@@ -41,6 +41,7 @@ EXTRA_DIST = \
 	core6.exp \
 	core_keccak1600.exp \
 	ed25519_convert.exp \
+	ed25519_sign_boundary.exp \
 	generichash.exp \
 	generichash2.exp \
 	generichash3.exp \
@@ -148,6 +149,7 @@ DISTCLEANFILES = \
 	core6.res \
 	core_keccak1600.res \
 	ed25519_convert.res \
+	ed25519_sign_boundary.res \
 	generichash.res \
 	generichash2.res \
 	generichash3.res \
@@ -262,6 +264,7 @@ TESTS_TARGETS = \
 	core6 \
 	core_keccak1600 \
 	ed25519_convert \
+	ed25519_sign_boundary \
 	generichash \
 	generichash2 \
 	generichash3 \
@@ -440,6 +443,9 @@ core_keccak1600_LDADD     = $(TESTS_LDADD)
 
 ed25519_convert_SOURCE    = cmptest.h ed25519_convert.c
 ed25519_convert_LDADD     = $(TESTS_LDADD)
+
+ed25519_sign_boundary_SOURCE = cmptest.h ed25519_sign_boundary.c
+ed25519_sign_boundary_LDADD  = $(TESTS_LDADD)
 
 generichash_SOURCE        = cmptest.h generichash.c
 generichash_LDADD         = $(TESTS_LDADD)
